@@ -1,0 +1,31 @@
+[data-theme="light"] {
+  background-color: var(--clr-light-100);
+
+  .circle {
+    border: 1px solid var(--clr-light-300);
+  }
+  .todo-list {
+    &__item {
+      background-color: #fff;
+      color: var(--clr-light-500);
+
+      &-check[aria-checked="true"] {
+        & + label {
+          color: var( --clr-light-300);
+        }
+      }
+
+      &:last-child, button {
+        color: var(--clr-light-400);
+      }
+
+      .del-icon path {
+        fill: var( --clr-light-500);
+      }
+    }
+
+    .todo-list__item + .todo-list__item {
+      border-top: 1px solid var(--clr-light-200);
+    }
+  }
+}

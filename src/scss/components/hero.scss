@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.hero {
+  $height: 200px;
+
+  min-height: $height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  img {
+    object-fit: cover;
+    height: $height;
+    width: 100%;
+  }
+}

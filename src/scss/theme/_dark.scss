@@ -1,0 +1,46 @@
+[data-theme="dark"] {
+  background-color: var(--clr-dark-600);
+
+  .circle {
+    border: 1px solid var( --clr-dark-300);
+  }
+
+  .main {
+    .input-field {
+      background-color: var(--clr-dark-500);
+
+      input {
+        color: var(--clr-dark-100);
+      }
+    }
+
+    .todo-list {
+      &__item {
+        background-color: var( --clr-dark-500);
+        color: var(--clr-dark-100);
+
+        &-check[aria-checked="true"] {
+          & + label {
+            color: var(--clr-dark-300);
+          }
+        }
+
+        &:last-child, button {
+          color: var(--clr-light-400);
+        }
+
+        .del-icon path {
+          fill: var(--clr-dark-300);
+        }
+      }
+
+      .todo-list__item + .todo-list__item {
+        border-top: 1px solid var(--clr-dark-400);
+      }
+    }
+
+    .filters {
+      background-color: var( --clr-dark-500);
+    }
+  }
+}

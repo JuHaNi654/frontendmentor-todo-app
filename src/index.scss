@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import './scss/_reset.scss';
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+@import "./scss/theme/light";
+@import "./scss/theme/dark";
+@import "./scss/utils.scss";
+@import "./scss/media.scss";
